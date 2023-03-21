@@ -3,28 +3,28 @@
 // ============ LOAD & INIT APP ============ //
 window.addEventListener("load", initApp);
 
-// function initApp() {
-  // Harry Potter
-  // const potterName = "Harry Potter";
-  // const potterGender = "male";
-  // const potterHouse = "Gryffindor";
-  // const potterDateOfBirth = "31-07-1980";
-  // const potterAncestry = "half-blood";
-  // const potterEyeColour = "green";
-  // const potterHairColour = "black";
-  // const potterActor = "Daniel Radcliffe";
-  // const potterImage = "http://hp-api.herokuapp.com/images/harry.jpg";
+ function initApp() {
+  //  Harry Potter
+   const potterName = "Harry Potter";
+   const potterGender = "male";
+   const potterHouse = "Gryffindor";
+   const potterDateOfBirth = "31-07-1980";
+   const potterAncestry = "half-blood";
+   const potterEyeColour = "green";
+   const potterHairColour = "black";
+   const potterActor = "Daniel Radcliffe";
+   const potterImage = "http://hp-api.herokuapp.com/images/harry.jpg";
 
-  // Hermione Granger
-  // const hermioneName = "Hermione Granger";
-  // const hermioneGender = "female";
-  // const hermioneHouse = "Gryffindor";
-  // const hermioneDateOfBirth = "17-12-1900";
-  // const hermioneAncestry = "half-blood";
-  // const hermioneEyeColour = "green";
-  // const hermioneHairColour = "black";
-  // const hermioneActor = "Daniel Radcliffe";
-  // const hermioneImage = "http://hp-api.herokuapp.com/images/harry.jpg";
+  //  Hermione Granger
+   const hermioneName = "Hermione Granger";
+   const hermioneGender = "female";
+   const hermioneHouse = "Gryffindor";
+   const hermioneDateOfBirth = "17-12-1900";
+   const hermioneAncestry = "half-blood";
+   const hermioneEyeColour = "green";
+   const hermioneHairColour = "black";
+   const hermioneActor = "Daniel Radcliffe";
+   const hermioneImage = "http://hp-api.herokuapp.com/images/harry.jpg";
 
   //  Ron Weasley
   // const ronName = "Ron Wreasley";
@@ -37,29 +37,29 @@ window.addEventListener("load", initApp);
   // const ronActor = "Daniel Radcliffe";
   // const ronImage = "http://hp-api.herokuapp.com/images/harry.jpg";
 
-  // showCharacter(
-    // potterImage,
-    // potterName,
-    // potterHouse,
-    // potterDateOfBirth,
-    // potterActor
-  // );
+   showCharacter(
+     potterImage,
+     potterName,
+     potterHouse,
+     potterDateOfBirth,
+     potterActor
+   );
 
-  // showCharacter(
-    // hermioneImage,
-    // hermioneName,
-    // hermioneHouse,
-    // hermioneDateOfBirth,
-    // hermioneActor
-  // );
+   showCharacter(
+     hermioneImage,
+     hermioneName,
+     hermioneHouse,
+     hermioneDateOfBirth,
+     hermioneActor
+   );
 
-  // showCharacter(
-    // "http://hp-api.herokuapp.com/images/ron.jpg",
-    // "Ron Weasley",
-    // "Gryffindor",
-    // "01-03-1980",
-    // "Rupert Grint"
-  // );
+   showCharacter(
+     "http://hp-api.herokuapp.com/images/ron.jpg",
+     "Ron Weasley",
+     "Gryffindor",
+     "01-03-1980",
+     "Rupert Grint"
+   );
 
   // console.log(
     // potterName,
@@ -72,8 +72,11 @@ window.addEventListener("load", initApp);
     // potterActor,
     // potterImage
   // );
-// }
+}
+ 
 
+
+//    --------       DOM-manipulation med createElement --------
 // function showCharacter(image, name, house, dateOfBirth, actor) {
   // console.log(image);
   // console.log(name);
@@ -111,26 +114,34 @@ window.addEventListener("load", initApp);
   // console.log(actorElement);
 // }
 
-// function showCharacter(image, name, house, dateOfBirth, actor) {
-// const html =
+ function showCharacter(image, name, house, dateOfBirth, actor) {
+ const html =
 /*html*/
-// `<article>
-// (<img src =${image}>)
-// <h2>${name}</h2>
-// <p>${house}</p>
-// <p>${dateOfBirth}</p>
-// <p>${actor}</p>
-// </article>`;
+ `<article>
+ <img src =${image}>
+ <h2>${name}</h2>
+ <p>${house}</p>
+ <p>${dateOfBirth}</p>
+ <p>${actor}</p>
+ </article>`;
 
-// document.querySelector("#characters").insertAdjacentHTML("beforeend", html);
-// list.querySelector("li:last-child button").addEventListener("click", removeToDo);
-// }
+ document.querySelector("#characters").insertAdjacentHTML("beforeend", html);
+   
+  //  const potterName = "Harry Potter";
+  //  const potterGender = "male";
+  //  const potterHouse = "Gryffindor";
+  //  const potterDateOfBirth = "31-07-1980";
+  //  const potterAncestry = "half-blood";
+  //  const potterEyeColour = "green";
+  //  const potterHairColour = "black";
+  //  const potterActor = "Daniel Radcliffe";
+  //  const potterImage = "http://hp-api.herokuapp.com/images/harry.jpg";
+ }
 
-// showCharacter(
-// console.log("Er vi her?"),
-// potterImage,
-// potterName,
-// potterHouse,
-// potterDateOfBirth,
-// potterActor
-// );
+//  showCharacter(
+  //  potterImage,
+  //  potterName,
+  //  potterHouse,
+  //  potterDateOfBirth,
+  //  potterActor
+//  );
